@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.navBar ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+}
+
+.navBar ul li a:hover {
+  background-color: #fff;
+  color: #ff012d;
+}
+
+.navBar ul li a:active {
+  color: #ff012d;
+}
+
+hr{
+  border: 1px solid #fff;
+  margin: 10px 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.divLeft{
+  width: 80%;
+}
+
+.divRight{
+  width: 20%;
+}
+
+
+
+.divLeft h1,h2,h3,h4,h5,h6{
+  color: #ff012d;
+  padding: 10px;
+}
+
+.container p{
+  padding: 10px 50px 10px 10px;
+}
+
+.container p a{
+  color: #fff;
+}
+
+.divLeft .listDiv{
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+
+.textDiv{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.divRight h2,h3{
+  color: #ff012d;
+}
+
+.divRight address{
+  color: #ff012d;
+}
+
+.divRight a{
+  color: #fff;
+}
+
+.divRight p{
+  padding-bottom: 10px;
+}
+
+
+.td_row{
+  background-color: #fff;
+  color: #000;
+}
+
+
+.contactForm{
+  padding: 10px;
+}
+
+.contactForm form div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0% 20% 0% 0%;
+}
+
+.contactForm form div label{
+  width: 30%;
+  padding: 10px;
+}
+
+
+.contactForm form div input{
+  width: 70%;
+  padding: 10px;
+}
+
+.contactForm form button{
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+
+.contactForm form .submit{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
