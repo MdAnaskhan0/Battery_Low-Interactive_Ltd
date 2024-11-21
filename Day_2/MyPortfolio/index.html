@@ -31,54 +31,55 @@
 
   <body>
     <!-- Header Section -->
-<header class="container-fluid px-4 py-3 header">
-    <div class="row align-items-center">
-      <!-- Logo -->
-      <div class="col-6 col-md-3 text-center text-md-start">
-        <div class="logo">
-          <h1>
-            <span class="jab">Md <span>Anas</span> Khan</span>
-          </h1>
+    <header class="container-fluid px-4 py-3 header">
+      <div class="row align-items-center">
+        <!-- Logo -->
+        <div class="col-6 col-md-3 text-center text-md-start">
+          <div class="logo">
+            <h1>
+              <span class="jab">Md <span>Anas</span> Khan</span>
+            </h1>
+          </div>
         </div>
-      </div>
-  
-      <!-- Navbar -->
-      <div class="col-12 col-md-6 d-none d-md-flex justify-content-center">
-        <nav class="navBar">
-          <ul class="d-flex flex-row justify-content-center m-0">
+
+        <!-- Navbar -->
+        <div class="col-12 col-md-6 d-none d-md-flex justify-content-center">
+          <nav class="navBar">
+            <ul class="d-flex flex-row justify-content-center m-0">
+              <li><a href="#">Home</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonial">Testimonial</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Button -->
+        <div class="col-6 col-md-3 text-center text-md-end">
+          <div class="button">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Mobile Navbar Toggle -->
+        <div class="col-12 d-md-none text-center mt-3">
+          <button class="btn btn-light toggle-menu" type="button">
+            <i class="bi bi-list" style="font-size: 1.5rem"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="col-12 d-md-none mobile-menu d-none text-center mt-3">
+          <ul class="list-unstyled">
             <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">Portfolio</a></li>
-            <li><a href="#" class="nav-link">About Me</a></li>
-            <li><a href="#" class="nav-link">Testimonial</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#testimonial" class="nav-link">Testimonial</a></li>
           </ul>
-        </nav>
-      </div>
-  
-      <!-- Button -->
-      <div class="col-6 col-md-3 text-center text-md-end">
-        <div class="button">
-          <a href="contactus.html" class="btn btn-primary">Contact Me</a>
         </div>
       </div>
-  
-      <!-- Mobile Navbar Toggle -->
-      <div class="col-12 d-md-none text-center mt-3">
-        <button class="btn btn-light toggle-menu" type="button">
-          <i class="bi bi-list" style="font-size: 1.5rem;"></i>
-        </button>
-      </div>
-  
-      <!-- Mobile Menu -->
-      <div class="col-12 d-md-none mobile-menu d-none text-center mt-3">
-        <ul class="list-unstyled">
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">Portfolio</a></li>
-          <li><a href="#" class="nav-link">About Me</a></li>
-          <li><a href="#" class="nav-link">Testimonial</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+    </header>
 
     <!-- Banner section -->
     <section class="container-fluid px-5 py-5 banner">
@@ -110,8 +111,7 @@
     </section>
 
     <!-- My Skills & Expertise -->
-
-    <section class="container-fluid px-5 py-5 skills">
+    <section class="container-fluid px-5 py-5 skills" id="service">
       <div class="skill-text skills">
         <h2 class="text-left">My Skills</h2>
         <h1 class="text-left">My Expertise</h1>
@@ -119,8 +119,8 @@
 
       <div class="row">
         <!-- Card 1 -->
-        <div class="col-md-3">
-          <div class="card fullCard" style="width: 25rem">
+        <div class="col-sm-6 col-md-3">
+          <div class="card fullCard">
             <div class="cartImg">
               <img
                 src="assets/images/cart1.png"
@@ -140,8 +140,8 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="col-md-3">
-          <div class="card fullCard" style="width: 25rem">
+        <div class="col-sm-6 col-md-3">
+          <div class="card fullCard">
             <div class="cartImg">
               <img
                 src="assets/images/cart2.png"
@@ -161,8 +161,8 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-3">
-          <div class="card fullCard" style="width: 25rem">
+        <div class="col-sm-6 col-md-3">
+          <div class="card fullCard">
             <div class="cartImg">
               <img
                 src="assets/images/cart3.png"
@@ -182,8 +182,8 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="col-md-3">
-          <div class="card fullCard" style="width: 25rem">
+        <div class="col-sm-6 col-md-3">
+          <div class="card fullCard">
             <div class="cartImg">
               <img
                 src="assets/images/cart4.png"
@@ -206,7 +206,7 @@
 
     <!-- About Me -->
 
-    <section class="container-fluid px-5 py-5 about">
+    <section class="container-fluid px-5 py-5 about" id="about">
       <div class="row align-items-center">
         <div class="col-md-6">
           <div class="about-image">
@@ -238,7 +238,7 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="container-fluid px-5 py-5 portfolio">
+    <section class="container-fluid px-5 py-5 portfolio" id="portfolio">
       <div class="row align-items-center justify-content-center m-5">
         <!-- Portfolio Title -->
         <div class="col-md-6">
@@ -336,7 +336,7 @@
     </section>
 
     <!-- Testimonial -->
-    <section class="container-fluid px-5 py-5 testimonial">
+    <section class="container-fluid px-5 py-5 testimonial" id="testimonial">
       <!-- Testimonial Title -->
       <div class="row mb-5 text-center">
         <div class="col-12">
@@ -436,7 +436,7 @@
     </section>
 
     <!-- Contact Us -->
-    <section class="container-fluid px-5 py-5 contact">
+    <section class="container-fluid px-5 py-5 contact" id="contact">
       <div class="row justify-content-center">
         <!-- Title -->
         <div class="col-12">
@@ -512,25 +512,25 @@
     <footer class="container-fluid px-5 py-4 footer">
       <div class="row align-items-center">
         <!-- Left Section: Logo -->
-        <div class="col-md-4 text-center text-md-start">
+        <div class="col-md-3 text-center text-md-start">
           <h1>
             <span class="jab">Md <span>Anas</span> Khan</span>
           </h1>
         </div>
 
         <!-- Middle Section: Navigation Links -->
-        <div class="col-md-4 text-center">
+        <div class="col-md-6 text-center">
           <ul class="footer-nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#contact">Contact me</a></li>
           </ul>
         </div>
 
         <!-- Right Section: Social Icons -->
-        <div class="col-md-4 text-center text-md-end">
+        <div class="col-md-3 text-center text-md-end">
           <div class="social-icons">
             <a href="#"
               ><img src="assets/images/facebook.png" alt="Facebook"
@@ -553,9 +553,7 @@
       <div class="row">
         <!-- Copyright Section -->
         <div class="col-12 copyright">
-          <p class=" mt-4">
-            &copy; 2023 Md Anas Khan. All rights reserved.
-          </p>
+          <p class="mt-4">&copy; 2023 Md Anas Khan. All rights reserved.</p>
           <div class="terms">
             <ul>
               <li><a href="#">Privacy Policy</a></li>

@@ -87,10 +87,11 @@
   padding: 10px;
 }
 
-/* Show/Hide Mobile Menu */
+/* Initially hide the mobile menu */
 .d-none {
   display: none !important;
 }
+
 
 
 /* Banner section */
@@ -132,6 +133,15 @@
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .banner p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+}
+
+
 .banner a {
   text-decoration: none;
   color: #fff;
@@ -154,7 +164,8 @@
   object-fit: cover;
 }
 
-/* My Skills */
+
+/* My Skills & Expertise */
 .skills {
   display: flex;
   flex-direction: column;
@@ -235,6 +246,43 @@
 
 .card a:hover {
   background-color: #4a20b0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills .card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cartImg {
+    width: 80px; 
+  }
+
+  .cartImg img {
+    padding: 5px;
+  }
+
+  .skills h1 {
+    font-size: 2.5rem; 
+  }
+
+  .skills h2 {
+    font-size: 1.2rem;
+  }
+
+  .card h5 {
+    font-size: 1.5rem;  
+  }
+
+  .card p {
+    font-size: 1rem; 
+  }
+
+  .card a {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
 }
 
 /* About section */
@@ -552,11 +600,10 @@
 }
 
 /* Footer Section */
-/* Footer Section */
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 
 .footer-logo img {

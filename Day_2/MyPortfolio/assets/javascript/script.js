@@ -1,5 +1,8 @@
-document.querySelector(".toggle-menu").addEventListener("click", function () {
-    const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.toggle("d-none");
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.querySelector('.toggle-menu'); 
+  const mobileMenu = document.querySelector('.mobile-menu');   
+
+  toggleButton.addEventListener('click', function () {
+    mobileMenu.classList.toggle('d-none');
   });
-  
+});
