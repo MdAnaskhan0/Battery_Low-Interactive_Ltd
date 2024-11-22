@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: #65b8a6de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel {
+    width: 80%;
+    height: 74%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#ptop {
+    padding: 0 30%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 10%;
+    background-color: #175e4ede;
+}
+
+#ptop h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    padding: 5px 10px;
+    color: #16332cde;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#pbottom {
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 10%);
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #175e4ede;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.bubble:hover {
+    cursor: pointer;
+    background-color: #368f7bde;
+}
+
+/* Centered "Game Over" Message */
+#pbottom.game-over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #175e4ede;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #panel {
+        width: 95%;
+        height: 84%;
+    }
+
+    #ptop {
+        padding: 0 10%;
+    }
+
+    .box {
+        font-size: 1rem;
+    }
+
+    .bubble {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    #pbottom {
+        gap: 5px;
+    }
+}
