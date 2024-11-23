@@ -64,3 +64,6 @@ getNewTarget();
 
 // Recreate bubbles on window resize
 window.addEventListener("resize", makeBubble);
+
+let result = Math.floor(window.innerWidth / 60) * Math.floor(window.innerHeight / 50);
+console.log(result);
