@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Hero Course Module</title>
+    <link rel="stylesheet" href="/Day5/Office/css/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <section class="navBar">
+      <!-- logo -->
+      <div class="logo">
+        <img src="/Day5/Office/images/logo.png" alt="Logo" />
+      </div>
+      <!-- NavLink -->
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- User Infromation -->
+      <div class="loginInfo">
+        <img src="/Day5/Office/images/lws.png" alt="lws" />
+        <p>Lws</p>
+      </div>
+    </section>
+    <!-- Navbar -->
+
+    <!-- Contact Form -->
+    <div class="bgc center bgcContact">
+      <div class="container">
+        <h1 class="text-start mb-3">Contact Me</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="col-md-6 contactInformation">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+              <a class="btn btn-outline-none" href="mailto:example@gmail.com">
+                <i class="fas fa-envelope"></i> example@gmail.com
+              </a>
+              <br />
+              <div class="btn btn-outline-none">
+                <i class="fas fa-phone"></i> +123-456-7890
+              </div>
+              <h4>Social Media:</h4>
+              <a href="#" class="social_icon">
+                <img
+                  src="/Day5/Office/icons/facebook.png"
+                  width="30px"
+                  alt="Facebook"
+                />
+                <p>Facebook</p>
+              </a>
+
+              <a href="#" class="social_icon">
+                <img
+                  src="/Day5/Office/icons/linkedin.png"
+                  width="30px"
+                  alt="Linkedin"
+                />
+                <p>Linkedin</p>
+              </a>
+
+              <a href="#" class="social_icon">
+                <img
+                  src="/Day5/Office/icons/instagram.png"
+                  width="30px"
+                  alt="Instagram"
+                />
+                <p>Instagram</p>
+              </a>
+
+              <a href="#" class="social_icon">
+                <img
+                  src="/Day5/Office/icons/twitter.png"
+                  width="30px"
+                  alt="Twitter"
+                />
+                <p>Twitter</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="toast align-items-center text-bg-primary border-0"
+        id="formToast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body" id="toastMessage">
+            Your message will appear here.
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Programming Hero. All rights reserved.</p>
+    </footer>
+
+    <!-- Js file Connect -->
+    <script src="/Day5/Office/js/form.js"></script>
+  </body>
+</html>
