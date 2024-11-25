@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --lightDark: #212936;
+  --dark: #141722;
+  --fontPrimary: #fff;
+  --green: #35bb78;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--fontPrimary);
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--lightDark);
+}
+
+.navBar {
+  background-color: var(--dark);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar .logo img {
+  width: 80%;
+  margin: 10px 0;
+}
+
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.navBar ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 0px;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: var(--fontPrimary);
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.navBar ul li a:hover {
+  color: var(--green);
+}
+
+.navBar ul li a.active {
+  color: var(--green);
+}
+
+.navBar .loginInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navBar .loginInfo img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navBar .loginInfo p {
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 12px;
+}
+
+
+
+/* Main Body */
+
+/* Main body with grid start */
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.checkbox {
+  width: 40px;
+}
+
+.milestoneDetails img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+  -webkit-transition: opacity 0.8s linear;
+  -moz-transition: opacity 0.8s linear;
+  transition: opacity 0.8s linear;
+}
+
+.title,
+.details {
+  margin: 10px auto;
+  padding: 5px 10px;
+}
+
+.milestones,
+.doneList {
+  background-color: var(--dark);
+  border-radius: 7px;
+  cursor: pointer;
+  max-height: 495px;
+  overflow: auto;
+}
+
+.doneList {
+  margin-top: 20px;
+}
+
+.module {
+  background-color: var(--dark);
+}
+
+.milestone,
+.module {
+  font-size: 14px;
+  color: var(--white);
+  margin: 10px;
+  padding: 10px;
+}
+
+.milestoneDetails {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.border-b {
+  border-bottom: 1px solid rgb(31, 41, 55);
+}
+
+.hidden_panel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.show {
+  max-height: 400px;
+}
+
+.loaded {
+  opacity: 1;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+/* Contact Form */
+.bgc {
+  color: #333;
+}
+h1,
+h2 {
+  color: #fff;
+}
+h1 {
+  font-weight: 600;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+  border-radius: 0.5rem;
+  border: 2px solid #ddd;
+  padding: 10px;
+}
+.form-control:focus {
+  border-color: #fda085;
+  box-shadow: none;
+}
+.btn {
+  margin-bottom: 8px;
+}
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.contactInformation h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social_icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social_icon p{
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.bgcContact h1,h2{
+  color: #000;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
